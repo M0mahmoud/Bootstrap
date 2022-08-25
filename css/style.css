@@ -1,0 +1,181 @@
+:root {
+  --dark: #19283f;
+  --green: #33d1cc;
+  --red: #ff3150;
+  --yellow: #ffc400;
+  --section: #eff7fa;
+}
+li {
+  list-style: none;
+}
+:hover {
+  transition: 0.3s;
+}
+/* ------- */
+.main-btn {
+  background-color: var(--red);
+  color: var(--yellow);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.main-btn:hover {
+  color: var(--dark);
+}
+/* --------- */
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-title svg {
+  color: var(--dark);
+}
+/* NAvBAR */
+
+.navbar {
+  background-color: var(--dark);
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green);
+}
+.navbar .search {
+  border-left: 1px solid var(--green);
+}
+.navbar .search svg {
+  color: var(--green);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Landing */
+.landing {
+  background-color: var(--dark);
+  min-height: calc(100vh - 60px);
+}
+
+/* features  */
+.features .icon {
+  color: var(--green);
+}
+.features h3 {
+  color: var(--yellow);
+}
+
+/* Our Work */
+.our-work {
+  background-color: var(--section);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul .active {
+  background-color: var(--red);
+  color: var(--yellow);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.our-work ul .active:hover {
+  background-color: var(--dark);
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red);
+}
+.box {
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+.our-work .box:hover img {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.our-work a:hover{
+  background-color: var(--dark);
+  color: var(--red);
+}
+
+/* Stuff */
+.stuff .description {
+  max-width: 500px;
+}
+/* Team */
+.team {
+  background-color: var(--section);
+}
+.team .main-title h2{
+  color: var(--yellow);
+}
+.team .box h4 {
+  background-color: var(--green);
+}
+
+/* Project */
+.project{
+  background-color: var(--dark);
+}
+
+/* Email */
+.email {
+  background-color: var(--yellow);
+}
+.email input[type="email"] {
+  border: none;
+  border-bottom: 1px solid white;
+  color: var(--dark);
+}
+.email input[type="email"]:focus {
+  outline: none;
+}
+.email ::placeholder {
+  color: var(--dark);
+}
+.email input[type="submit"] {
+  background-color: var(--dark);
+  color: var(--yellow);
+}
+
+/* Footer */
+.footer{
+  background-color: var(--dark);
+}
+
+.footer .copyright > span {
+  color: var(--green);
+}
+.footer .copyright div span {
+  color: var(--yellow);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
